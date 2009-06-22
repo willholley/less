@@ -6,7 +6,7 @@ module Less
       :path     => /([#.][->#.\w ]+)?( ?> ?)?/,              # #header > .title
       :selector => /[-\w #.,>*:\(\)\=\[\]']/,                 # .cow .milk > a
       :variable => /@([-\w]+)/,                              # @milk-white
-      :property => /@[-\w]+|[-a-z]+/,                        # font-size
+      :property => /@[-\w]+|[_a-z0-9-]+/,                        # font-size
       :color    => /#([a-zA-Z0-9]{3,6})\b/,                  # #f0f0f0
       :number   => /\d+(?>\.\d+)?/,                          # 24.8
       :unit     => /px|em|pt|cm|mm|%/                        # em
